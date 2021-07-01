@@ -8,10 +8,25 @@
 
 <body>
     <script>
-        "use strict";
-        let name = "Василий";
-        let admin = name;
-        console.log(admin);
+        let cart = [
+            {
+                product: "pen",
+                price: 100,
+            },
+            {
+                product: "paper",
+                price: 60,в
+            }
+        ];
+        let cartPrice = 0;
+        function countBasketPrice(cart) {
+            let funBasketPrice = 0;
+            for (let prod of cart) {
+                funBasketPrice += prod.price;
+            }
+            return funBasketPrice;
+        }
+        console.log("Стоимость корзины: " + countBasketPrice(cart));
     </script>
 </body>
 

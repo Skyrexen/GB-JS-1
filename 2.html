@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 2</title>
+</head>
+
+<body>
+    <script>
+        let cart = [
+            {
+                product: "pen",
+                price: 100,
+            },
+            {
+                product: "paper",
+                price: 60,
+            }
+        ];
+        let cartPrice = 0;
+        for (let prod of cart) {
+            cartPrice += prod.price;
+            console.log("Товар " + prod.product + " стоит: " + prod.price);
+        }
+
+        console.log("Стоимость корзины: " + cartPrice);
+    </script>
+</body>
+
+</html>
